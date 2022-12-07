@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title ReadMore
+    style
+        include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") Bookshelf]
+            li #[a(href="/") Authors]
+            li #[a(href="/") Bestsellers]
+            li #[a(href="/") About]
+            li #[a(href="/") Contact]
+
+    section#bestselling 
+        | section for bestselling books
+
+    section#new-releases
+        | section for newly reselesded books
+
+    section#featured
+        | section for featured books
+
+    footer#footer 
+        | footer of website
+
+
+    script
+      include ../static/script.js     

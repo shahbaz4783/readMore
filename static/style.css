@@ -1,0 +1,58 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+
+#navbar{
+    background-color: rgb(60, 170, 161);
+    padding: 14px;
+    font-family: 'Zen Dots', cursive;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#bestselling{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+
+#new-releases{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(138, 195, 119);
+}
+
+#featured{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(100, 179, 159);
+}
+
+/* footer */
+
+#footer{
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
