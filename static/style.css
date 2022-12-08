@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 *{
     margin: 0;
@@ -7,52 +7,172 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(212, 242, 245);
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
 /* Navigation */
 
-#navbar{
-    background-color: rgb(60, 170, 161);
-    padding: 14px;
-    font-family: 'Zen Dots', cursive;
-}
 
-#navbar ul{
+nav {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(163, 147, 243);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 16px;
+  }
+  
 
-#navbar li{
-    list-style: none;
-}
-
-#navbar li a{
-    font-size: 1.3rem;
+  
+  
+  nav a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  nav a:hover {
+    color: rgb(65, 84, 206);
+  }
+  
+  nav form {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  nav input[type="text"] {
+    padding: 6px;
+    margin-right: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    width: 65vw;
+  }
+
+
+  /* home page */
+
+  #container{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-columns: 3fr 12fr 6fr;
+    width: 90vw;
+    height: 100vh;
+    justify-content: center;
+    margin: 100px auto;
+  }
+
+  .r1{
+    background-color: aqua;
+    border-radius: 20px;
 }
 
-#bestselling{
-    height: 100vh;
-    width: 100vw;
-    background-color: bisque;
+.profile{
+    border: 2px solid black;
+    
 }
 
-#new-releases{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(138, 195, 119);
+.discover{
+    border: 2px solid black;
+    
 }
 
-#featured{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(100, 179, 159);
-}
+.r2{
+    background-color: rgb(117, 74, 136);
+    border-radius: 20px;
+    }
+
+    .mind{
+      border: 2px solid black;
+      
+  }
+  
+  .posts{
+        border: 2px solid black;
+  
+    }
+    
+    .r3{
+        background-color: rgb(141, 215, 141);
+        border-radius: 20px;
+
+    }
+    
+    .chats{
+      border: 2px solid black;
+      
+  }
+  
+  .suggestions{
+        border: 2px solid black;
+  
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+      }
+  
+
+
+
+
 
 /* footer */
 
-#footer{
+
+footer.footer {
     height: 50vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0);
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: grey;
+  }
+  
+  .copyright {
+    font-size: 14px;
+  }
+  
+  .links {
+    font-size: 14px;
+  }
+  
+  .links ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+ 

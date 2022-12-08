@@ -5,27 +5,72 @@ html
     style
         include ../static/style.css
   body
-    nav#navbar
-        ul 
-            li #[a(href="/") Home]
-            li #[a(href="/") Bookshelf]
-            li #[a(href="/") Authors]
-            li #[a(href="/") Bestsellers]
-            li #[a(href="/") About]
-            li #[a(href="/") Contact]
+    //- navigation bar
+  nav
+    ul
+        
+        li
+            a(href='/') readMore
+        li
+            form(action='search.html')
+            input(type='text', placeholder='Search for profiles, posts...')
+    
+        li
+            a(href="notification.pug") Notifications
+            
+        li
+            a(href="profile.pug") My Profile
 
-    section#bestselling 
-        | section for bestselling books
+            //- home page
+div#container
+    aside.profile.r1.box
+        h2 Profile
 
-    section#new-releases
-        | section for newly reselesded books
+    section.mind.r2.box
+        h2 Know About Authors
 
-    section#featured
-        | section for featured books
+    aside.chats.r3.box
+        h2 Chats
 
-    footer#footer 
-        | footer of website
+    aside.discover.r1.box
+        h2 Discover
+
+    section.posts.r2.box
+       h2 Read Books
+
+    aside.suggestions.r3.box
+        h2 Suggested For You
+    
+
+
+
+
+
+            //- Pug code for the footer
+
+
+footer.footer
+  .container
+    .copyright
+      | Copyright &copy; 2022 readMore
+    .links
+      ul
+        li
+          a(href='#') About
+        li
+          a(href='#') Help
+        li
+          a(href='#') Contact
+        li
+          a(href='#') Terms of Service
+        li
+          a(href='#') Privacy Policy
+
+
 
 
     script
-      include ../static/script.js     
+      include ../static/script.js 
+      
+      //- Pug code to load the Font Awesome library
+    script(src='https://kit.fontawesome.com/87fefa2ba1.js' crossorigin='anonymous')
