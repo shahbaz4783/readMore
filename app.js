@@ -15,6 +15,9 @@ app.set('views', path.join(__dirname, 'views'))
 app.get('/', (req, res) => {
     res.status(200).render('index.pug');
 })
+app.get('notification.pug', (req, res) => {
+    res.status(300).render('notification.pug');
+})
 
 // START THE SERVER
 

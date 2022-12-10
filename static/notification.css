@@ -1,0 +1,33 @@
+/* CSS code for styling the notification container */
+div.notification-container {
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* CSS code for styling the notification */
+  div.notification {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  /* CSS code for styling the notification icon */
+  i.fas.fa-book,
+  i.fas.fa-dollar-sign,
+  i.fas.fa-users,
+  i.fas.fa-thumbs-up,
+  i.fas.fa-star,
+  i.fas.fa-comments,
+  i.fas.fa-lightbulb,
+  i.fas.fa-trophy {
+    margin-right: 5px;
+  }
+  /* CSS code for styling the notification action */
+  a.notification-action {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

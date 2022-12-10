@@ -1,0 +1,26 @@
+/* CSS code for styling the contact form */
+form.contact-form {
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  form.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  form.contact-form input,
+  form.contact-form textarea,
+  form.contact-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  form.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+  }
+  
